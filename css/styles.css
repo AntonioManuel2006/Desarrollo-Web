@@ -1,149 +1,229 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-    .inicio {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 2rem 3rem;
-      background-color: #86ace9;
-      color: #030303;
-      font-size: 10px;
-    }
-    .inicio h1{
-        margin: 10px;
-        font-size: 12px;
-        font-weight: bold;
-        font-family: Arial, sans-serif;
-        text-align: start;
-        color: #030303;
-        text-shadow: 0px 1px #000000;
-        letter-spacing: 1px;
-    }
-    .inicio a{
-        text-decoration: none;
-        color: #030303;
-        font-weight: bold;
-        font-size: 16px;
-        font-family: Arial, sans-serif;
-        padding: 2px 10px;
-    }
-    #inicio {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 2rem 3rem;
-      background-color: #f82525;
-      color: #030303;
-      font-size: 10px;
-      
-    }
-    #inicio h1{
-        margin: 10px;
-        font-size: 12px;
-        font-weight: bold;
-        font-family: Arial, sans-serif;
-        text-align: start;
-        color: #030303;
-        text-shadow: 0px 1px #000000;
-        letter-spacing: 1px;
-    }
-    #inicio a{
-        text-decoration: none;
-        color: #030303;
-        font-weight: bold;
-        font-size: 16px;
-        font-family: Arial, sans-serif;
-        padding: 2px 10px;
-    }
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    #contenido_principal div:first-child {
-        display: flex;
-        background: linear-gradient(135deg, #3b82f6, #06b6d4);
-        color: rgb(255, 255, 255);
-        font-size: 2rem;
-        flex-wrap: wrap;
-        height: 400px; /* Ajusta la altura según lo que necesites */
-        box-shadow: 0 4px 20px rgba(0,0,0,0.3), 0 1.5px 6px rgba(0,0,0,0.1);
-        border: 1px solid #3d70fd;
-    }
+        /* Estilos generales */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: var(--color-text);
+            line-height: 1.6;
+        }
 
-    
+        /* Contenedor principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-#contenido_principal div p{
-        padding: 10px;
-        margin-top: 20px;
-        max-width: 30%;
-        align-items: center;
-        display: flex;
-        padding-right: 50%;
-        font-size: 18px;
-        font-family: Arial, sans-serif;
+        /* Header/Navegación */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--color-text);
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .contenido_principal {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 60px 40px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contenido_principal::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite; /*Animacion suave fondo*/
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.1) rotate(180deg); }
+        }
+
+        .contenido_principal h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
+
+        .contenido_principal p {
+            font-size: 1.2rem;
+            color: var(--color-text-light);
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* cursos y caracteristicas de estilos */
+        .cursos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .cursos {
+            flex: 1 1 calc(50% - 12.5px);
+            min-width: 280px;
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cursos::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .cursos:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+       /*Tamaño y caracteristicas de los iconos*/
+        .course-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        /*Color fondo de iconos*/
+        .html-icon { background: linear-gradient(135deg, #f06529 0%, #e34c26 100%); }
+        .java-icon { background: linear-gradient(135deg, #5382a1 0%, #f89820 100%); }
+        .sql-icon { background: linear-gradient(135deg, #336791 0%, #4479a1 100%); }
+        .js-icon { background: linear-gradient(135deg, #f7df1e 0%, #f0db4f 100%); color: #323330; }
+
+        .curso_lenguaje h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--color-text);
+        }
+
+        .curso_lenguaje p {
+            color: var(--color-text-light);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contenido_principal h1 {
+                font-size: 2rem;
+            }
+
+            .contenido_principal p {
+                font-size: 1rem;
+            }
+
+            .curso_lenguaje {
+                flex: 1 1 100%;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contenido_principal {
+                padding: 40px 20px;
+            }
+
+            .contenido_principal h1 {
+                font-size: 1.5rem;
+            }
+
+            .nav-link {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }
+
         
-    }
-    #contenido_principal div h2{
-        padding: 10px;
-        margin-right: 30px;
-        max-width: 30%;
-        align-items: center;
-        padding-top: 50px;
-        padding-right: 70%;
-        font-size: 25px;
-        font-weight: bold;
-        font-family: Arial, sans-serif;
-        flex-direction: column;
-        display: flex;
-    }
-    
-    .contenido_secundario{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 2rem 3rem;
-        background-color: #48a6f3;
-        color: #000000;
-        font-size: 20px;
-    }
-
-    #contenido_principal_html{
-        display: flex;
-        background-color: #f6703b;
-        color: rgb(255, 255, 255);
-        font-size: 1rem;
-        flex-wrap: wrap;
-        height: 400px; /* Ajusta la altura según lo que necesites */
-        box-shadow: 0 4px 20px rgba(0,0,0,0.3), 0 1.5px 6px rgba(0,0,0,0.1);
-        border: 1px solid #e05c1c;
-    }
-
-    
-
-#contenido_principal_html div p{
-        padding: 10px;
-        margin: 20px;
-        max-width: 30%;
-        align-items: center;
-    
-        padding-right: 50px;
-        font-size: 18px;
-        font-family: Arial, sans-serif;
-        letter-spacing: 1px;
-        vertical-align: bottom;
         
-    }
-    #contenido_principal_html div h2{
-        padding: 10px;
-        margin: 20px;
-        max-width: 70%;
-        align-items: center;
-        padding-top: 50px;
-        padding-right: 70%;
-        font-size: 25px;
-        font-weight: bold;
-        font-family: Arial, sans-serif;
-        flex-direction: column;
-    }
+
+        .curso_lenguaje:nth-child(2) { animation-delay: 0.1s; }
+        .curso_lenguaje:nth-child(3) { animation-delay: 0.2s; }
+        .curso_lenguaje:nth-child(4) { animation-delay: 0.3s; }
     
