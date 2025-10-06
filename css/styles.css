@@ -64,7 +64,7 @@
             background: rgba(102, 126, 234, 0.1);
         }
 
-        .nav-link:hover, .nav-link.active {
+        .nav-link:hover{
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             transform: translateY(-2px);

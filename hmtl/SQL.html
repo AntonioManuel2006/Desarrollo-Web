@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sql.css">
+    <title>Introducción a SQL</title>
+</head>
+<body>
+    <div class="container">
+        <header class="cabecera">
+            <nav class="contenedor-nav">
+                <a href="#" class="logo">ACADEMIA VIRTUAL</a>
+                <ul class="enlaces-nav">
+                    <li><a href="index.html" class="enlace-nav">Inicio</a></li>
+                    <li><a href="html.html" class="enlace-nav activo">HTML</a></li>
+                    <li><a href="java.html" class="enlace-nav">Java</a></li>
+                    <li><a href="SQL.html" class="enlace-nav">SQL</a></li>
+                    <li><a href="JavaScript.html" class="enlace-nav">JavaScript</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <div class="content">
+            <h2>¿Qué es SQL?</h2>
+            <p>
+                SQL (Structured Query Language) es un lenguaje de programación diseñado específicamente 
+                para gestionar y manipular bases de datos relacionales. Permite realizar operaciones como 
+                consultar, insertar, actualizar y eliminar datos de manera eficiente.
+            </p>
+
+            <h2>Comandos Principales</h2>
+            <div class="commands">
+                <div class="command-card">
+                    <h3>SELECT</h3>
+                    <p>Consulta datos de la base de datos</p>
+                </div>
+                <div class="command-card">
+                    <h3>INSERT</h3>
+                    <p>Inserta nuevos registros</p>
+                </div>
+                <div class="command-card">
+                    <h3>UPDATE</h3>
+                    <p>Actualiza registros existentes</p>
+                </div>
+                <div class="command-card">
+                    <h3>DELETE</h3>
+                    <p>Elimina registros</p>
+                </div>
+            </div>
+
+            <h2>Ejemplo de Consulta</h2>
+            <div class="code-box">
+                SELECT nombre, apellido, edad<br>
+                FROM usuarios<br>
+                WHERE edad > 18<br>
+                ORDER BY nombre;
+            </div>
+
+            <h2>¿Por qué usar SQL?</h2>
+            <p>
+                SQL es fundamental en el mundo de la tecnología porque permite gestionar grandes 
+                volúmenes de datos de forma estructurada. Es utilizado por empresas de todos los 
+                tamaños para almacenar información de clientes, productos, transacciones y mucho más. 
+                Su sintaxis es relativamente sencilla y es compatible con la mayoría de sistemas 
+                de gestión de bases de datos como MySQL, PostgreSQL, Oracle y SQL Server.
+            </p>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 - Página educativa sobre SQL</p>
+        </footer>
+    </div>
+</body>
+</html>

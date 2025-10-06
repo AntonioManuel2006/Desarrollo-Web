@@ -3,26 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/html.css">
     <title>HTML</title>
 </head>
 <body>
-    <div id="inicio">
-            <a href="index.html"><h1>ACADEMIA VIRTUAL</h1></a>
-            <a href="html.html">HTML</a>
-            <a href="java.html">JAVA</a>
-            <a href="SQL.html">SQL</a>
-            <a href="JavaScript">JavaScript</a>
+    <div id="container">
+            <header class="cabecera">
+            <nav class="contenedor-nav">
+                <a href="#" class="logo">ACADEMIA VIRTUAL</a>
+                <ul class="enlaces-nav">
+                    <li><a href="index.html" class="enlace-nav">Inicio</a></li>
+                    <li><a href="html.html" class="enlace-nav activo">HTML</a></li>
+                    <li><a href="java.html" class="enlace-nav">Java</a></li>
+                    <li><a href="SQL.html" class="enlace-nav">SQL</a></li>
+                    <li><a href="JavaScript.html" class="enlace-nav">JavaScript</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
-    <Section>
-        <div id="contenido_principal_html">
-            <h2>HTML</h2><br>
-            <p>HTML (HyperText Markup Language) es el lenguaje estándar <br>para crear páginas web. Utiliza etiquetas para estructurar el contenido y  <br>definir elementos como encabezados, párrafos, enlaces e imágenes.</p>
-        </div>
-    </Section>
+    <section>
+            <div id="contenido_principal_html">
+                <h2>HTML</h2>
+                <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Utiliza etiquetas para estructurar el contenido y definir elementos como encabezados, párrafos, enlaces e imágenes.</p>
+            </div>
+    </section>
+    
     <section id="contenido_secundario_html">
-        <div>
-            <p></p>
-        </div>
+            <div class="tarjeta-contenido">
+                <div class="icono-tarjeta">📝</div>
+                <h3>Estructura Básica</h3>
+                <p>Aprende los fundamentos de HTML y cómo crear la estructura básica de una página web.</p>
+                <ul>
+                    <li>Etiquetas y elementos</li>
+                    <li>Atributos HTML</li>
+                    <li>Estructura del documento</li>
+                    <li>Semántica HTML5</li>
+                </ul>
+            </div>
+
+            <div class="tarjeta-contenido">
+                <div class="icono-tarjeta">🎨</div>
+                <h3>Elementos Multimedia</h3>
+                <p>Integra contenido multimedia en tus páginas web de manera efectiva.</p>
+                <ul>
+                    <li>Imágenes y formatos</li>
+                    <li>Videos HTML5</li>
+                    <li>Audio y sonido</li>
+                    <li>Canvas y SVG</li>
+                </ul>
+            </div>
+
+            <div class="tarjeta-contenido">
+                <div class="icono-tarjeta">📋</div>
+                <h3>Formularios</h3>
+                <p>Crea formularios interactivos para recopilar información de los usuarios.</p>
+                <ul>
+                    <li>Inputs y validación</li>
+                    <li>Selectores y opciones</li>
+                    <li>Botones y acciones</li>
+                    <li>Validación HTML5</li>
+                </ul>
+            </div>
+
+            <div class="tarjeta-contenido">
+                <div class="icono-tarjeta">🔍</div>
+                <h3>SEO y Accesibilidad</h3>
+                <p>Optimiza tu HTML para motores de búsqueda y accesibilidad universal.</p>
+                <ul>
+                    <li>Meta tags y SEO</li>
+                    <li>Atributos ARIA</li>
+                    <li>Estructura semántica</li>
+                    <li>Mejores prácticas</li>
+                </ul>
+            </div>
+        </section>
+
+
 </body>
 </html>
