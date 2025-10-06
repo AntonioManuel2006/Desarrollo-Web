@@ -3,14 +3,12 @@
             padding: 0;
             box-sizing: border-box;
         }
+        /* Estilos generales para la página web*/
 :root {
-            --color-primario: #1139ec;
-            --color-primario-oscuro: #1043eb;
+            --color-primario: #fefeff;
+            --color-primario-oscuro: #e2e8fc;
             --color-primario-claro: #0d40e9;
             --color-secundario: #f87171;
-            --color-fondo: #ffffff;
-            --color-fondo-secundario: #fef2f2;
-            --color-tarjeta: #ffffff;
             --color-texto: #1f2937;
             --color-texto-claro: #6b7280;
             --sombra-sm: 0 1px 3px rgba(220, 38, 38, 0.12);
@@ -86,16 +84,8 @@
             padding: 20px;
             margin-bottom: 30px;
             box-shadow: var(--shadow-lg);
+            border : 2px solid #1139ec;
         }
-
-        .nav-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
-
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
@@ -103,7 +93,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-decoration: none;
-            color :red;
         }
         .enlaces-nav {
             display: flex;
@@ -120,7 +109,6 @@
             transition: all 0.3s ease;
             font-weight: 500;
             background: var(--color-fondo);
-            border: 2px solid transparent;
         }
         .enlaces-nav :hover{
             background-color: var(--color-primario);
@@ -129,7 +117,6 @@
         .cabecera {
             background: var(--color-fondo);
             border: 1px 0px solid var(--color-primario);
-            border-radius: var(--borde-radio);
             padding: 20px;
             margin-bottom: 30px;
             box-shadow: var(--sombra-lg);
@@ -141,6 +128,7 @@
             justify-content: space-between;
             align-items: center;
             gap: 20px;
+            border: 1 solid var(--color-primario);
         }
 
         header h1 {

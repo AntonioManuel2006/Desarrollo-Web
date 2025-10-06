@@ -70,7 +70,7 @@
             transform: translateY(-2px);
         }
 
-        /* Hero Section */
+        /* Seccion principal */
         .contenido_principal {
             background: white;
             border-radius: var(--border-radius);
@@ -93,11 +93,7 @@
             animation: pulse 15s ease-in-out infinite; /*Animacion suave fondo*/
         }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1) rotate(0deg); }
-            50% { transform: scale(1.1) rotate(180deg); }
-        }
-
+        
         .contenido_principal h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
