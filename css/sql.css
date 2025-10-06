@@ -5,10 +5,13 @@
         }
         /* Estilos generales para la página web*/
 :root {
-            --color-primario: #fefeff;
-            --color-primario-oscuro: #e2e8fc;
+            --color-primario: #1139ec;
+            --color-primario-oscuro: #1043eb;
             --color-primario-claro: #0d40e9;
             --color-secundario: #f87171;
+            --color-fondo: #ffffff;
+            --color-fondo-secundario: #fef2f2;
+            --color-tarjeta: #ffffff;
             --color-texto: #1f2937;
             --color-texto-claro: #6b7280;
             --sombra-sm: 0 1px 3px rgba(220, 38, 38, 0.12);
