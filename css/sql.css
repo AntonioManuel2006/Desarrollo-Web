@@ -3,22 +3,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        /* Estilos generales para la página web*/
-:root {
-            --color-primario: #1139ec;
-            --color-primario-oscuro: #1043eb;
-            --color-primario-claro: #0d40e9;
-            --color-secundario: #f87171;
-            --color-fondo: #ffffff;
-            --color-fondo-secundario: #fef2f2;
-            --color-tarjeta: #ffffff;
-            --color-texto: #1f2937;
-            --color-texto-claro: #6b7280;
-            --sombra-sm: 0 1px 3px rgba(220, 38, 38, 0.12);
-            --sombra-md: 0 4px 6px rgba(220, 38, 38, 0.15);
-            --sombra-lg: 0 10px 15px rgba(220, 38, 38, 0.2);
-            --borde-radio: 12px;
-        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -36,16 +21,17 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
             overflow: hidden;
         }
-        .header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: var(--border-radius);
+
+        .cabecera {
+            background: #ffffff;
+            border: 2px solid #1139ec;
+            border-radius: 12px;
             padding: 20px;
             margin-bottom: 30px;
-            box-shadow: var(--shadow-lg);
+            box-shadow: 0 10px 15px rgba(220, 38, 38, 0.2);
         }
 
-        .nav-container {
+        .contenedor-nav {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -60,43 +46,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-decoration: none;
-            
         }
 
-        .nav-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            list-style: none;
-        }
-
-        .nav-link {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            padding: 10px 20px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            background: rgba(102, 126, 234, 0.1);
-        }
-
-        .header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: var(--border-radius);
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: var(--shadow-lg);
-            border : 2px solid #1139ec;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-decoration: none;
-        }
         .enlaces-nav {
             display: flex;
             flex-wrap: wrap;
@@ -106,51 +57,19 @@
 
         .enlace-nav {
             text-decoration: none;
-            color: var(--color-texto);
+            color: #1f2937;
             padding: 10px 20px;
             border-radius: 8px;
             transition: all 0.3s ease;
             font-weight: 500;
-            background: var(--color-fondo);
+            background: #ffffff;
         }
-        .enlaces-nav :hover{
-            background-color: var(--color-primario);
+
+        .enlaces-nav li:hover .enlace-nav {
+            background-color: #1139ec;
             color: white;
         }
-        .cabecera {
-            background: var(--color-fondo);
-            border: 1px 0px solid var(--color-primario);
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: var(--sombra-lg);
-        }
 
-        .contenedor-nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-            border: 1 solid var(--color-primario);
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-        .cabecera {
-            background: var(--color-fondo);
-            border: 2px solid var(--color-primario);
-            border-radius: var(--borde-radio);
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: var(--sombra-lg);
-        }
         .content {
             padding: 40px;
         }
@@ -167,16 +86,7 @@
         p {
             margin-bottom: 15px;
             text-align: justify;
-        }
-
-        .code-box {
-            background: #f4f4f4;
-            border-left: 4px solid #667eea;
-            padding: 15px;
-            margin: 20px 0;
-            font-family: 'Courier New', monospace;
-            border-radius: 5px;
-            overflow-x: auto;
+            color: #1f2937;
         }
 
         .commands {
@@ -205,6 +115,16 @@
             font-size: 1.3em;
         }
 
+        .code-box {
+            background: #f4f4f4;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
         footer {
             background: #2c3e50;
             color: white;
@@ -213,17 +133,15 @@
             margin-top: 40px;
             justify-content: center;
         }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            #contenido_principal_html h2 {
-                font-size: 2rem;
+            body {
+                padding: 10px;
             }
 
-            #contenido_principal_html p {
-                font-size: 1rem;
-            }
-
-            .tarjeta-contenido {
-                flex: 1 1 100%;
+            .container {
+                border-radius: 10px;
             }
 
             .contenedor-nav {
@@ -233,5 +151,53 @@
 
             .enlaces-nav {
                 justify-content: center;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .commands {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .enlace-nav {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+
+            .command-card {
+                padding: 15px;
+            }
+
+            .command-card h3 {
+                font-size: 1.1em;
+            }
+
+            footer {
+                padding: 15px;
+                font-size: 0.9rem;
             }
         }
