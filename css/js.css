@@ -3,7 +3,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        /*Características del cuerpo*/
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -30,14 +30,14 @@
             align-items: center;
             padding: 0 2rem;
         }
-
+        /*Logo/nombre de la academia*/
         .logo {
             color: #f1c40f;
             font-size: 1.5rem;
             font-weight: bold;
             text-decoration: none;
         }
-
+        /*Estilos de los enlaces de navegación*/
         .enlaces-nav {
             display: flex;
             list-style: none;
