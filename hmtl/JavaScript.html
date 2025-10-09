@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Antonio Manuel Garcés">
+    <link rel="stylesheet" href="../css/js.css">
+    <title>Introducción a JavaScript</title>
+    
+</head>
+<body>
+    <div class="container">
+        <header class="cabecera">
+            <nav class="contenedor-nav">
+                <a href="index.html" class="logo">ACADEMIA VIRTUAL</a>
+                <ul class="enlaces-nav">
+                    <li><a href="index.html" class="enlace-nav">Inicio</a></li>
+                    <li><a href="html.html" class="enlace-nav">HTML</a></li>
+                    <li><a href="java.html" class="enlace-nav">Java</a></li>
+                    <li><a href="SQL.html" class="enlace-nav">SQL</a></li>
+                    <li><a href="JavaScript.html" class="enlace-nav activo">JavaScript</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <h2>¿Qué es JavaScript?</h2>
+            <p>
+                JavaScript es un lenguaje de programación interpretado, orientado a objetos y basado en eventos, 
+                diseñado principalmente para crear páginas web dinámicas e interactivas. Permite manipular el 
+                contenido HTML, responder a eventos del usuario y comunicarse con servidores, convirtiéndose en 
+                uno de los pilares fundamentales del desarrollo web moderno.
+            </p>
+
+            <h2>Conceptos Principales</h2>
+            <div class="commands">
+                <div class="command-card">
+                    <h3>Variables</h3>
+                    <p>Almacenan datos con let, const o var</p>
+                </div>
+                <div class="command-card">
+                    <h3>Funciones</h3>
+                    <p>Bloques de código reutilizables</p>
+                </div>
+                <div class="command-card">
+                    <h3>Eventos</h3>
+                    <p>Responden a acciones del usuario</p>
+                </div>
+                <div class="command-card">
+                    <h3>DOM</h3>
+                    <p>Manipula elementos de la página</p>
+                </div>
+            </div>
+
+            <h2>Ejemplo de Código</h2>
+            <div class="code-box">
+                function saludar(nombre) {<br>
+                &nbsp;&nbsp;let mensaje = `¡Hola, ${nombre}!`;<br>
+                &nbsp;&nbsp;console.log(mensaje);<br>
+                &nbsp;&nbsp;return mensaje;<br>
+                }<br>
+                <br>
+                saludar("Antonio");
+            </div>
+
+            <h2>¿Por qué usar JavaScript?</h2>
+            <p>
+                JavaScript es esencial en el desarrollo web moderno porque permite crear experiencias 
+                interactivas y dinámicas para los usuarios. Es el único lenguaje de programación que 
+                funciona nativamente en todos los navegadores web. Además, con Node.js, JavaScript 
+                también se puede usar en el backend, lo que permite a los desarrolladores usar un 
+                solo lenguaje en todo el stack. Su ecosistema es inmenso, con frameworks como React, 
+                Vue, Angular y bibliotecas para prácticamente cualquier necesidad.
+            </p>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 - Página educativa sobre JavaScript</p>
+        </footer>
+    </div>
+</body>
+</html>
