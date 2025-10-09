@@ -125,7 +125,31 @@
             padding: 1.5rem;
             margin-top: 3rem;
         }
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .commands {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 768px) {
+            .contenedor-nav {
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .enlaces-nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+
+            .enlace-nav {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.9rem;
+            }
+
             .content {
                 padding: 2rem 1rem;
             }
@@ -133,14 +157,50 @@
             h2 {
                 font-size: 1.5rem;
             }
+
+            .commands {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .code-box {
+                padding: 1rem;
+                font-size: 0.85rem;
+            }
         }
 
-        @media (max-width: 450px) {
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.2rem;
+            }
+
             .content {
                 padding: 1.5rem 1rem;
             }
 
             h2 {
-                font-size: 0.5rem;
+                font-size: 1.3rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+
+            .command-card {
+                padding: 1rem;
+            }
+
+            .command-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .code-box {
+                padding: 0.8rem;
+                font-size: 0.75rem;
+            }
+
+            footer {
+                padding: 1rem;
+                font-size: 0.9rem;
             }
         }
